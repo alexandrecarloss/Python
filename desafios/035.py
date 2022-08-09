@@ -1,3 +1,6 @@
+print('-=-' * 20)
+print('Analisando triângulo')
+print('-=-' * 20)
 r1 = float(input('Comprimento da primeira reta: '))
 r2 = float(input('Comprimento da segunda reta: '))
 r3 = float(input('Comprimento da terceira reta: '))

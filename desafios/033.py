@@ -1,7 +1,32 @@
-n1 = float(input('Digite o primeiro número: '))
-n2 = float(input('Digite o segundo número: '))
-n3 = float(input('Digite o terceiro número: '))
-# Se os números forem iguais
+a = float(input('Digite o primeiro número: '))
+b = float(input('Digite o segundo número: '))
+c = float(input('Digite o terceiro número: '))
+#Solução Curso em Vídeo
+
+'''#Verificando o menor
+menor = a
+if b < a and b < b:
+    menor = b
+if c < a and c < b:
+    menor = c
+print(f'O menor valor digitado foi {menor}')
+
+#Verificando o maior
+maior = a
+if b > a and b > c:
+    maior = b
+if c > a and c > b:
+    maior = c
+print(f'O maior valor digitado foi {maior}')'''
+
+#Solução alternativa
+n = [a, b, c]
+print(f'O maior valor digitado foi {max(n)}')
+print(f'O menor valor digitado foi {min(n)}')
+
+
+#Minha primeira solução
+'''# Se os números forem iguais
 if n1 == n2 and n2 == n3:
     print('Os números são iguais')
 else:
@@ -41,5 +66,5 @@ else:
                 if n1 < n2:
                     print('E o primeiro é menor!')
                 if n2 < n1:
-                    print('E o segundo é menor!')
+                    print('E o segundo é menor!')'''
 
