@@ -1,3 +1,8 @@
+# cores = {'limpa':'\033[m', 
+# 'azul':'\033[34m', 
+# 'amarelo':'\033[33m', 
+# 'pretoebranco':'\033[97m'}
+
 cores = {    #cores normais
 
          'vermelho':'\033[31m',
@@ -38,7 +43,8 @@ fundo = {
     'magenta':'\033[45m',
     'ciano':'\033[46m'
 }
-n1 = int(input(f'{cores["azul em negrito"]}Digite um número: {cores["limpa"]}'))
-n2 = int(input(f'{cores["amarelo em negrito"]}Digite outro número: {cores["limpa"]}'))
-s = (n1 + n2)
-print (f'A soma entre eles é: {fundo["ciano"]}{s}{cores["limpa"]}')
+
+
+
+print(f'{cores["azul"]}Oi {cores["limpa"]}')
+
