@@ -38,6 +38,7 @@ fundo = {
     'magenta':'\033[45m',
     'ciano':'\033[46m'
 }
+
 print(cores['azul em negrito'],'-=-' * 20,cores['limpa'] )
 print('Analisando triângulo')
 print(cores['amarelo em negrito'],'-=-' * 20,cores['limpa'])
@@ -46,12 +47,12 @@ r2 = float(input('Comprimento da segunda reta: '))
 r3 = float(input('Comprimento da terceira reta: '))
 
 if r1 < (r2 + r3) and r2 < (r1 + r3) and r3 < (r1 + r2):
-    print('\033[42mPodem\033[m formar um triângulo')
+    print('\033[42mPodem\033[m formar um triângulo ', end='')
     if r1 == r2 == r3:
-        print('Equilátero')
+        print('EQUILÁTERO')
     elif r1 == r2 or r1 == r3 or r3 == r2:
-        print('Isósceles')
+        print('ISÓSCELES')
     else:
-        print('Escaleno')
+        print('ESCALENO')
 else:
     print('\033[41mNão podem\033[m formar um triângulo')

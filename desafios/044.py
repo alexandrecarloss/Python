@@ -1,12 +1,25 @@
-preco = float(input('Informe o preço do produto R$'))
-pag = float(input('De que maneira você que pagar? \n 1 para à vista no dinheiro ou no cheque com desconto de 10% \n 2 para pagar à vista no cartão com 5% de desconto \n 3 para pagar no cartão em até duas vezes com preço normal \n 4 para pagar no cartão em 3 vezes ou mais com juros de 20% \n'))
-
-if pag == 1:
+print('{:=^40}'.format(' LOJAS ALEXANDRE '))
+preco = float(input('Preço da compra R$'))
+print('''FORMAS DE PAGAMENTO
+[ 1 ] à vista dinheiro/cheque
+[ 2 ] à vista cartão
+[ 3 ] 2x no cartão
+[ 4 ] 3x ou mais no cartão''')
+opção = int(input('Qual é a opção? '))
+if opção == 1:
     valor = preco * 0.9
-elif pag == 2:
+elif opção == 2:
     valor = preco * 0.95
-elif pag == 3:
+elif opção == 3:
     valor = preco
-elif pag == 4:
+    parcela = preco / 2
+    print(f'Sua compra sera parcelada em 2x de R${parcela:.2f} SEM JUROS.')
+elif opção == 4:
     valor = preco * 1.2
-print(f'O valor a ser pago é: R${valor:.2f}')
+    totparc = int(input('Quantas parcelas? '))
+    parcela = preco / totparc
+    print(f'Sua compra será parcelada em {totparc}x de R${parcela:.2f} COM JUROS')
+else:
+    valor = preco
+    print('OPÇÃO INVÁLIDA de pagamento. Tente novamente!')
+print(f'Sua compra de R${preco:.2f} vai custar R${valor:.2f} no final.')

@@ -1,16 +1,16 @@
 print('Índice de Massa Cospórea (IMC)')
-peso = float(input('Informe seu peso '))
-altura = float(input('Informe sua altura '))
+peso = float(input('Qual é o seu peso? (Kg) '))
+altura = float(input('Qual é sua altura (m) '))
 imc = round(peso / pow(altura, 2), 2)
-
+print(f'O IMC dessa pessoa é de {imc:.1f}')
 if imc < 18.5:
-    print('Abaixo do peso')
+    print('Você está ABAIXO DO PESO normal')
 elif 18.5 <= imc < 25:
-    print('Peso ideal')
+    print('PARABÉNS, você está na faixa de PESO NORMAL')
 elif 25 <= imc < 30:
-    print('Sobrepeso')
+    print('Você está em SOBREPESO')
 elif 30 <= imc < 40:
-    print('Obesidade')
+    print('Você está em OBESIDADE!')
 else:
-    print('Obesidade mórbida')
+    print('Você está em OBESIDADE MÓRBIDA, cuidado!')
 print(imc)

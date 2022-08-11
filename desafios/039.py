@@ -7,10 +7,10 @@ mesnasc = datetime.date.today().month
 anonasc = int(input('Digite o seu ano de nascimento: '))
 
 #Verificar o ano atual
-anoalist = datetime.date.today().year
+atual = datetime.date.today().year
 
 #Verificando a diferença entre o ano atual e o ano de nascimento
-ano = anoalist - anonasc
+ano = atual - anonasc
 
 '''
 #Resolução normal
@@ -30,7 +30,7 @@ if ano == 17 or ano == 18 or ano == 19:
     a = 'ano'
 else:
     a = 'anos'
-
+print(f'Para quem nasceu em {anonasc} tem {ano} anos.')
 #Dia do alistamento
 if ano == 18 and mesnasc == 1 and dianasc == 1:
     print(f'Dia do alistamento.')

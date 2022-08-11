@@ -2,7 +2,11 @@ import random
 print("=-=" * 20)
 print('JOKENPÔ!')
 mac = random.randint(1, 3)
-j = input('Qual você escolhe pedra(1), papel(2) ou tesoura(3)? ')
+j = input('''Suas opções:
+[ 1 ] PEDRA
+[ 2 ] PAPEL
+[ 3 ] TESOURA
+Qual é a sua jogada?''')
 
 
 if j == '1':
