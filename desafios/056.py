@@ -1,21 +1,23 @@
 #Definir média 0
 m = 0
-#laço de 0 a 4 pede nome sexo e idade
-for c in range(0, 4):
-    nome = input('Digite seu nome: ')
-    sexo = input('Sexo (M) ou (F): ').upper()
+#laço de 1 a 5 pede nome sexo e idade
+for c in range(1, 5):
+    print(f'----- {c}° Pessoa -----')
+    nome = str(input('Nome: '))
+    idade = int(input('Idade: '))
+    sexo = str(input('Sexo [M/F]: ').strip())
     #Testar se o sexo é M ou F
     # if sexo != 'M' and sexo != 'F':
     #     print(sexo)
     #     print('Letra inválida. Por favor informe (M) ou (F).')
     #     sexo = input('Sexo (M) ou (F): ').upper()
-    idade = int(input('Informe sua idade: '))
+    
     #no primeiro laço mulheres menores = 0 e velho = idade
-    if c == 0:
+    if c == 1:
         mmenor = 0
         velho = idade
     # Se o primeiro laço for homem hvelho = velho e maisevelho = nome
-    if c == 0 and sexo == 'M':
+    if c == 1 and sexo == 'M':
         hvelho = velho
         maisvelho = nome
     # Se o sexo for M e idade maior que hvelho hvelho = idade e maisvelho = nome
