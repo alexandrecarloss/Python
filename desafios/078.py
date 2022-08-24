@@ -22,11 +22,9 @@ for c, v in enumerate(valores):
 #Print dos valores 
 print('=-' * 30)
 print(f'Você digitou os valores {valores}')
-
 print(f'O maior valor digitado foi {maior}  nas posições ',end='')
 for c in range(0, len(posmai)):
     print(f'{posmai[c]}...', end='')
-
 print(f'\nO menor valor digitado foi {menor}  nas posições ',end=' ')
 for c in range(0, len(posmen)):
     print(f'{posmen[c]}...',end=' ')
