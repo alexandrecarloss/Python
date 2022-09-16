@@ -4,7 +4,7 @@ jogador['nome'] = str(input('Nome do Jogador: '))
 partidas = int(input(f'Quantas partidas {jogador["nome"]} jogou? '))
 for c in range(0, partidas):
     gols.append(int(input(f'Quantos gols na partida {c}? ')))
-jogador['gols'] = gols[:]
+jogador['gols'] = gols
 jogador['total'] = sum(jogador['gols'])
 print('-='*30)
 print(f'O jogador {jogador}')
