@@ -1,18 +1,21 @@
 from random import randint
-números = []
-def sorteio():
-    números.clear()
-    for c in range(0, 5):
-        números.append(randint(1, 10))
+from time import sleep
+
+def sorteia(lista):
     print('Sorteando 5 valores da lista: ',end='')
-    for v in números:
-        print(v, end=' ')
+    for c in range(0, 5):
+        n = randint(1, 10)
+        lista.append(n)
+        print(f'{n} ',end='',flush=True)
+        sleep(0.3)
     print('PRONTO!')
-def somaPar():
+    
+def somaPar(lista):
     soma = 0
-    for v in números:
+    for v in lista:
         if v % 2 == 0:
             soma += v
-    print(f'Somando os valores pares de {números}, temos {soma}')
-sorteio()
-somaPar()
+    print(f'Somando os valores pares de {lista}, temos {soma}')
+números = []
+sorteia(números)
+somaPar(números)
