@@ -1,8 +1,4 @@
-Carlos Alexandre;19
-Kaio Trindade;20
-Negao;20
+José;35
 Gustavo;41
-Ana;22
-Pedro;35
-Paulo;95
-José;55
+Maria;85
+Carlos Alexandre;19
